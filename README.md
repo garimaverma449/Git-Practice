@@ -67,9 +67,10 @@ _Usage_
 _flags:_ 
 - git branch ->  This will show all the branches.
 - git branch --list -> This will show the list of branches.
-- git branch -a -> This will show the list of branches.
+- git branch -a,-all-> This will show the list of branches.
 - git branch [New-Branch-name] ->  It will make new branch name.
 - git branch -d [Branch-name] ->  We can Delete the branch we want too.
+- git branch -D -> Delete Branch
 - git checkout -b [branch-name] -> This command will make the new branch and switched to the new branch.
 
 
