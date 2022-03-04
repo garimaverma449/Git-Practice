@@ -1,4 +1,4 @@
-# ***Git Commands*** ![Git](/git.png)
+# ***Git Commands*** 
 
 
 > # **Git config**<br>
