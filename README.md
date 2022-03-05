@@ -1,12 +1,13 @@
-# ***Git Commands*** <img src="Git.png" alt="GIT" width="100"/ 
+# ***Git Commands***  <img src="Git.png" alt="GIT" width="70">
 
 
 ## **Git config** 
 
-This command sets the author name and email address respectively to be used with your commits. 
+This command sets the author name and email address respectively to be used with your commits on global or local project level. 
 _Usage_  
-- git config --global user.email "[email address]" 
-- git config --global user.name "[name]" 
+- git config --list ->This will list all the config 
+- git config --global user.email "[email-address]"  -> It is used to set the email of the user globally.
+- git config --global user.name "[name]" -> It is used to set the name of the user globally.
 
 
 ## **Git Add** 
