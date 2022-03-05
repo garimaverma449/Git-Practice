@@ -1,9 +1,17 @@
 # ***Git Commands***  <img src="Git.png" alt="GIT" width="70">
 
+## **Some another Git Commands**
 
+1. *pwd* -> It is used to print the present working directory.
+2. *cd [folder-name]* -> It is used to move into the folder.
+3. *cd..* -> It is used to move one folder back.
+4. *cd* -> It is used to move to the initial path or at the Start of the terminal.
+5. *ls* -> It is used to list all the files and folders in the repository.
+6. *ls -a* -> It is used to show all the files and folders including hidden folders too.
+ 
 ## **Git config** 
 
-This command sets the author name and email address respectively to be used with your commits on global or local project level. 
+This command sets the author name and email address respectively to be used with your commits on global or local project level. we can set different username ta a file locally too.
 _Usage_  
 - git config --list ->This will list all the config 
 - git config --global user.email "[email-address]"  -> It is used to set the email of the user globally.
@@ -53,7 +61,7 @@ _Usage_
 
 ## **Git Init** 
 
-This commands is used to create a local repository.
+This command intialize an empty repository in your location. 
 
 _Usage_  
 - git log -  This command is use to see the version histoy for the current branch.
@@ -61,7 +69,7 @@ _Usage_
 
 ## **Git Branch** 
 
-This commands list all the branches in the working directory.
+This command list all the branches in the working directory.
 _Usage_  
 - git branch
 
