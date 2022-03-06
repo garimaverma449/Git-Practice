@@ -91,17 +91,18 @@ _Usage_
 
 _flags:_ 
 - git branch -  Show all the branches.
-- git checkout [New-Branch-name] -  will make new branch name.
-- git switch [branch-name]  - can switch to the another existing branch.
-- git branch -b [Branch-name] -  -b makes the new branch also move to the new branch.
+- git checkout [New-Branch-name] ->  will make new branch name.
+- git switch [branch-name]  -> can switch to the another existing branch.
+- git branch -b [Branch-name] ->  -b makes the new branch also move to the new branch.
 
 
 ## **Git Merge** 
 
 This command is used to merge with the another branch. 
 _Usage_  
-- git merge [branch-name]
-- git merge [source-branch] [target-branch] -  Merge a branch into a target branch. 
+- git merge --quit -> Thid will quit the merging process.
+- git merge [branch-name] -> This will also merge command.
+- git merge [source-branch] [target-branch] ->  Merge a branch into a target branch. 
 
 
 ##  **Git Remove** 
@@ -111,7 +112,8 @@ _Usage_
 - git rm [file-name] -  This command is used to delete the file from your working directory and stages the deletion.
 
 _flags:_  
-- git rm -r [file-name.txt] -  Remove a file.
+- git rm -r [file-name.txt] ->  Remove a file.
+- git remove -f,--force -> -> This command is used to override the safety check that git makes to ensure that files in head match the current files int the staging area and working directory.
 
 ## **Git Remote** 
 
