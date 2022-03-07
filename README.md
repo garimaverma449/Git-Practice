@@ -92,7 +92,7 @@ _flags:_
 * git branch -d[Branchname] -> We can Delete the branch we want too.
 * git branch -a,--all -> This command help us to see all the branches in the local  repository and in the remote repository.
 * git branch -D ->It is used to Delete the  branches.
-* git branch -r -> It is used to show all the remote branches
+* git branch -r -> It is used to show all the remote branches.
 
 
 ## **Git Checkout** 
@@ -144,6 +144,6 @@ The Git Fetch command is used when the branch exists on a remote repository not 
 _usage:_
 * git fetch [remote-name] [file-name] -> Fetch the files from the remoite repository.
 ```bash
-After fetching the file from the remote repository, USe this command to see the files we fetched:
+After fetching the file from the remote repository, Use this command to see the files we fetched:
 git checkout [remote-name]/[branch-name]
 ```
