@@ -344,6 +344,26 @@ git remote rm [name]
 git remote [old-name] [new-name] 
 ```
 
+## **Git Diff**
+
+* The git diff command displays the differnces between files in two commits or bewtween a commit and your current repo.You can see whta text has been added to,removed from and changed in a file.
+```bash
+git diff
+```
+
+* This command is used to check the diffence between two branches
+```bash
+git diff branch1 branch2
+```
+
+* This command is used to check the differnce between two commits.
+```bash
+git diff commit1 commit2
+```
+* This command let us see the differnce by their ids.
+```bash
+git diff id1 id2
+```
 ## **Git Fetch**
 The Git Fetch command is used when the branch exists on a remote repository not on the local repository, so if you want to fetch the file in a local repository,we use this fetch command.The git fetch command is used to retrieves the content/metadata of the remote repo. This metadata is used to check if there is any changes available that can be pulled to a local machine. 
 
