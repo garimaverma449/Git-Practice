@@ -72,20 +72,20 @@ git log -n _a_
 ## **Git Init**
 
 When You're working with Git , You need to store the code in a git repository.
+
 You have two options:
 * You can clone a repository from a remote repo using git clone. This will clone all your code and history from an existing project to your local machine or repo.
 * you can make a new repository with the help of mentioned below command, which will have its own versioning system and history.
 ```bash 
 git init
 ```
-_Usage_
+
 * You can specify a directory to where you want to initialize the new repository by specifying the folder name.
-``bash
+```bash
 git init [folder]
 ``` 
 
 * You can create a bare repository which means the contents of repo doesnot need to be changed and they do not need a working tree 
-
 ```bash
 git init --bare [folder-name]
 ```
@@ -153,13 +153,15 @@ git commit -a
 This command list all the files that have to be committed or will show the working tree status.  
 _Usage_
 
-
+* Thid command displays the state of the working directory and the staging area. 
 ```bash
 git status 
 ```
+* This command will give the output in short-format
 ```bash
 git status -s
 ```
+* This command will give the status history of the branch name mentioned.
 ```bash
 git status <branchname>
 ```
@@ -194,12 +196,7 @@ _Usage_
 
 * This command is used to pull the content of the remote repo to the local system.
 ```bash
-git pull[remote-repo]
-```
-
-* This command can be used to pull the data of the origin or remote-repo.
-```bash
-git pull remote-repo]
+git pull [remote-repo]
 ```
 
 ## **Git Branch** 
@@ -278,7 +275,7 @@ git branch -b [Branch-name]
 This command is used to merge with the another branch. 
 _Usage_  
 
-* 
+* This command is used to merge the branch.
 ```bash
 git merge [branch-name]
 ```
