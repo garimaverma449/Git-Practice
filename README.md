@@ -1,23 +1,20 @@
 # ***Git Commands*** <img src=Git.png alt="Git" width=70> <img src=gitlogo.png alt="GitHub" width=70>
 
-
-## GIT URL's
-1. Git:  
-
 ## **Some another Git Commands**
 1. *pwd*   It is used to print the present working directory.
-2. *cd [folder-name]*   It stands for Change Directory. It is used to move into the folder named.
-3. *cd ..*   It is used to move one folder back.
-4. *cd*   It is used to move to the initial path or at the start of the terminal.
-5. *ls*   It is used list all the files and folders in the working directory.
+2. *cd [folder-name]* It stands for Change Directory. It is used to move into the folder named.
+3. *cd ..*  It is used to move one folder back.
+4. *cd* It is used to move to the initial path or at the start of the terminal.
+5. *ls*  It is used list all the files and folders in the working directory.
 6. *ls -a*   It is used list all the files and folders in the working directory including the hidden folder too.
 7. *ls --list*   It is used list all the files and folders in the working directory.
-
+8. *git clean -fd* It is used to remove untracked files and directories.
+9. *git clean -fx* It is used to remove tracked and untracked files.
 
 ## **Git Log**
 The git log command shows all the commits made in a repository. You can see the hash ofe each commits, the message associated with and more metadata. OR we can say this command is used for displaying the history of a repository.
 
-_Usage:_
+_Usage_
 
 * To see the history of all the commits done.
 ```bash 
@@ -44,8 +41,8 @@ git log -n _a_
 
 * This command sets the author name and email address respectively to be used with your commits.
 * We can store the name locally or globally or we can configure the name for a file.Your Git username does not need to be the same as your version control username, such as the one you use on GitHub. The git config command configures your Git installation.
-_Usage:_  
-* List all The commits.
+_Usage_  
+* This command list all the commits.
 ```bash 
 git config --list
 ```   
@@ -61,10 +58,11 @@ git config --global user.name "[name]"
 ## **Git Add** 
 
 This command will add modified files to the staged area. 
-_Usage:_  
-* git add <file.name>
-
-_Flags:_  
+_Usage_  
+* This command help us to add a file in the staging area by adding filensme too.
+```bash
+git add <file.name>
+```
 * Move the file from the working area to the staging area
 ```bash 
 git add .
@@ -82,9 +80,9 @@ git add <filename>
 
 This command will commit the added file and records the file permanently.  
 _Usage_  
-* git commit -m "Message"
-
-_Flags:_  
+* ```bash
+git commit -m "Message"
+```
 * This command will record files permanently.
 ```bash
 git commit -m " Initial Commit"
@@ -94,14 +92,11 @@ git commit -m " Initial Commit"
 git commit -a
 ```   
 
-
 ## **Git Status** 
 
 This command list all the files that have to be committed or will show the working tree status.  
 _Usage_  
-* git Status
 
-_Flags:_  
 ```bash
 git status 
 ```
@@ -116,7 +111,7 @@ git status <branchname>
 
 When you save a file in a Git Repository,the changes will be stored in your computer, we can push the local repository to remote repository BY the help of this command.
 
-_Usage:_
+_Usage_
 * It Also push the local repo into remote and -u -> Where u means upstream/ -set-upstream.
 ```bash
 git push -u origin master
@@ -125,64 +120,124 @@ git push -u origin master
 ```bash
 git push [remote-name] [branch-name]
 ```
+* It delete the branch and space between colon is noted.
+```bash
+git push  <REMOTENAME> :<BRANCHNAME>
+```
 
+## **Git Pull**
 
+The git pull command retrieves and downloads the contents of a repository to your local machine. Your local repository is updated so that it shows the content from the remote repository.
+_Usage_
+* This command is used to pull the content of the remote repo to the local system.
+```bash
+git pull[remote-repo]
+```
+* This command can be used to pull the data of the origin or remote-repo.
+```bash
+git pull remote-repo]
+```
 ## **Git Init** 
-
-
 
 ## **Git Branch** 
 
 This commands list all the branches in the working directory.<vr>
-_Usage_  
-* git branch
+_Usage_   
+* This command list all the branches.
+```bash
+git branch --list,-l
+```   
 
-_flags:_ 
-* git branch --list,-l   This command list all the branches.
-* git branch   Show all the branches.
-* git branch[NewBranchname]   will make new branch name.
-* git branch -d[Branchname]   We can Delete the branch we want too.
-* git branch -a,--all   This command help us to see all the branches in the local  repository and in the remote repository.
-* git branch -D  It is used to Delete the  branches.
-* git branch -r   It is used to show all the remote branches.
+* This command will show all the branches.
+```bash
+git branch
+```
 
+* This command will make new branch name.
+```bash
+git branch[NewBranchname]
+```
+
+* We can Delete the branch we want too.
+```bash 
+git branch -d [Branchname]
+```
+
+* This command help us to see all the branches in the local  repository and in the remote repository.
+```bash
+git branch -a,--all
+```
+* This command is used to Delete the  branches.
+```bash
+git branch -D
+``` 
+* This command is used to show all the remote branches.
+```bash
+git branch -r
+```
 
 ## **Git Checkout** 
 
 This command is used to switch one branch to another. 
 _Usage_  
-* git checkout
+* This command will switch to the other branches.
+```bash
+git checkout
+```
+* This command will make new branch name.
+```bash
+git checkout [New-Branch-name]
+```
 
-_flags:_ 
-* git branch   Show all the branches.
-* git checkout [New-Branch-name]   will make new branch name.
-* git switch [branch-name]   can switch to the another existing branch.
-* git branch -b [Branch-name]   -b makes the new branch also move to the new branch.
+* This command helps us to switch to the another existing branch.
+```bash
+git switch [branch-name]
+```   
 
+* This command's flag -b makes the new branch also move to the new branch.
+```bash
+git branch -b [Branch-name]
+```
 
 ## **Git Merge** 
 
 This command is used to merge with the another branch. 
 _Usage_  
-* git merge [branch-name]
-* git merge [source-branch] [target-branch]   Merge a branch into a target branch. 
-
+* 
+```bash
+git merge [branch-name]
+```
+* This command is merge a branch into a target branch.
+ ```bash
+git merge [source-branch] [target-branch]
+```   
+ 
+ 
 
 ##  **Git Remove** 
 
 This command is used to delete the file. 
 _Usage_  
-* git rm [file-name]   This command is used to delete the file from your working directory and stages the deletion.
-
-_flags:_  
-* git rm -r [file-name.txt]   Remove a file.
-
+* This command is used to delete the file from your working directory and stages the deletion. 
+```bash
+git rm [file-name]
+```
+* Thus command is used to remove the remote repo.
+```bash 
+git remote remove [repo-name or origin]   
+```  
+* This command is used to Remove a file.
+```bash 
+git rm -r [file-name.txt]   
+```
 ## **Git Remote** 
 
 _Usage_  
-* git remote   This commands let you to view , create and delete the connections to other repositories 
-
-_Flags:_
+This commands let you to view , create and delete the connections to other repositories 
+* 
+```bash
+git remote
+```    
 * This command is used to add or link the remote repo to the localrepo after then we can push,pukk and fetch the file from remote repository.
 ```bash 
 git remote add [remote-name] [URL]   
