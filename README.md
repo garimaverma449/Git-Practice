@@ -109,7 +109,7 @@ _Usage_<br>
 _flags:_ <br>
 - git rm -r [file-name.txt] -> Remove a file.
 
-# **Git Remote**<br>
+# **Git Remote**
 
 _Usage_ <br>
 - git remote -> This commands let you to view , create and delete the connections to other repositories.
